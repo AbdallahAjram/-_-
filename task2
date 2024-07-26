@@ -1,0 +1,74 @@
+# Hotel Management System
+
+## Overview
+
+This project is a Hotel Management System developed during my internship at CodeAlpha. It is built using Java Swing for the user interface and integrates with a database to manage hotel information and customer ratings.
+
+## Features
+
+- **Hotel Listings**: Displays a list of hotels along with their locations and average ratings.
+- **Hotel Ratings**: Allows customers to rate hotels and view average ratings.
+- **Authentication**: Secure login system with error handling for incorrect passwords and duplicate hotel entries.
+
+## Technologies Used
+
+- Java
+- Java Swing
+- JDBC (Java Database Connectivity)
+- MySQL (or any other relational database)
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/hotel-management-system.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd hotel-management-system
+    ```
+3. Set up the database:
+    - Create a database and import the provided SQL schema and data.
+    - Update the `DatabaseHelper.java` file with your database connection details.
+
+4. Compile and run the application:
+    ```bash
+    javac -d bin src/view/*.java src/model/*.java
+    java -cp bin view.LoginView
+    ```
+
+## Usage
+
+- **Login**: Users can log in with their phone number and password. If the credentials are incorrect, an error message is displayed.
+- **Add Hotel**: Users can add new hotels to the database. If the hotel name already exists, an error message is displayed.
+- **Rate Hotel**: Users can rate hotels and view the list of hotels along with their average ratings.
+- **View Hotels**: Displays a list of hotels with their names, locations, and average ratings.
+
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch:
+    ```bash
+    git checkout -b feature/YourFeature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/YourFeature
+    ```
+5. Open a pull request.
+
+
+
+## Acknowledgements
+
+- Thank you to CodeAlpha for the opportunity and support during this internship.
+- Thanks to my mentors and peers for their valuable feedback and guidance.
+
+---
+
+Feel free to modify this file as per your specific project details and requirements.
